@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+	<title>webapp</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/css.css" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+</head>
+<body>
+	<section class="w app-y">
+		<section class="controller">
+			<div class="page page-one">
+				<div class="large"></div>
+				<a href="http://www.google.com" style="position:absolute;top:0;left:0;z-index:9999">文字demo</a>
+				<img src="images/page1/img1.png" class="img-anim img1" />
+				<img src="images/page1/img2.png" class="img-anim img2" />
+				<img src="images/page1/img3.png" class="img-anim img3" />
+			</div>
+			<div class="page page-two">
+				<div class="large"></div>
+				<img src="images/page2/img1.png" class="img-anim img1" />
+				<img src="images/page2/img2.png" class="img-anim img2" />
+				<img src="images/page2/img3.png" class="img-anim img3" />
+				<img src="images/page2/img4.png" class="img-anim img4" />
+				<img src="images/page2/img5.png" class="img-anim img5" />
+			</div>
+			<div class="page page-three">
+				<div class="large"></div>
+				<img src="images/page3/img1.png" class="img-anim img1" />
+				<img src="images/page3/img2.png" class="img-anim img2" />
+				<img src="images/page3/img3.png" class="img-anim img3" />
+				<img src="images/page3/img4.png" class="img-anim img4" />
+				<img src="images/page3/img5.png" class="img-anim img5" />
+			</div>
+			<div class="page page-four">
+				<div class="large"></div>
+				<img src="images/page4/img1.png" class="img-anim img1" />
+				<img src="images/page4/img2.png" class="img-anim img2" />
+				<img src="images/page4/img3.png" class="img-anim img3" />
+				<img src="images/page4/img4.png" class="img-anim img4" />
+				<img src="images/page4/img5.png" class="img-anim img5" />
+			</div>
+			<div class="page page-five">
+				<div class="large"></div>
+				<img src="images/page5/img1.png" class="img-anim img1" />
+				<img src="images/page5/img2.png" class="img-anim img2" />
+				<img src="images/page5/img3.png" class="img-anim img3" />
+				<img src="images/page5/img4.png" class="img-anim img4" />
+				<img src="images/page5/img5.png" class="img-anim img5" />
+			</div>
+		</section>
+	</section>
+
+	<div class="drag-arrow"><img src="images/up_arrow.png" /></div>
+	<div class="mask">
+		<div class="logo">
+			<div class="inner">
+				<img src="images/logo.png" /><br />
+				<span class="progress">0%</span>
+			</div>
+		</div>
+	</div>
+	<div class="song"><audio autoplay="autoplay" src="audio/song.mp"></audio></div>
+
+	<script src="js/sea.js"></script>
+	<script type="text/javascript">
+	    seajs.config({
+			alias : {
+			},
+			preload : ["zepto","createjs-2014.12.12.min.js"],
+			debug : true
+		});
+
+		seajs.use('main');
+	</script>
+</body>
+</html>
